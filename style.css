@@ -191,7 +191,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 10px; /* put gap bellow section titles and cards */
 }
 
 .projects-container {
@@ -213,6 +213,12 @@
   box-shadow: inset 8px 0 0 rgba(239, 226, 134);
 
   justify-content: space-between;
+
+  color: rgba(127, 127, 127);
+}
+
+.project-titles {
+  color: black;
 }
 
 .project-icons {
@@ -246,9 +252,40 @@
   font-size: medium;
 }
 
-/* 
-rgba(239, 226, 134)
-*/
+/* ANNOUNCMENTS */
+.announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.announcements-container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 14px;
+}
+
+.announcements-container .announcements-titles {
+  font-size: large;
+  font-weight: bold;
+
+  color: black;
+}
+
+.announcements-container {
+  color: rgba(127, 127, 127);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(127, 127, 127, 0.5);
+}
 
 .main-content > * {
   border: 2px solid black;
