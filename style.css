@@ -15,7 +15,7 @@
 
 /* sidebar */
 .sidebar {
-  background-color: rgb(42, 109, 196);
+  background-color: rgba(25, 146, 212);
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   padding: 40px 30px;
@@ -73,7 +73,7 @@
 
 /* header */
 .header {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   grid-column: 2 / 3;
   padding: 20px 40px;
   display: flex;
@@ -120,7 +120,7 @@
 }
 
 .top-header .searchBar {
-  background-color: rgb(207, 219, 224);
+  background-color: rgba(226, 232, 240);
   border: none;
   height: 30px;
   width: 70%;
@@ -162,7 +162,7 @@
 }
 
 .b-header-right button {
-  background-color: rgb(42, 109, 196);
+  background-color: rgba(25, 146, 212);
   border: none;
   height: 40px;
   width: 100px;
@@ -176,4 +176,23 @@
 .main-content {
   background-color: rgb(207, 219, 224);
   grid-column: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+
+  padding: 30px 20px;
+  gap: 20px;
 }
+
+.main-content > * {
+  border: 2px solid black;
+}
+
+.your-projects {
+  grid-row: 1 / 3;
+}
+
+/* 
+rgba(239, 226, 134)
+*/
