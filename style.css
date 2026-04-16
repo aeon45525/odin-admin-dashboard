@@ -76,8 +76,12 @@
   background-color: rgb(255, 255, 255);
   grid-column: 2 / 3;
   padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* top part header */
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -121,6 +125,51 @@
   height: 30px;
   width: 70%;
   border-radius: 20px;
+}
+
+/* botton part header */
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-header-left,
+.b-header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.BotLeftHead-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bottom-header .username {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.bottom-header .hi-there {
+  font-weight: bolder;
+}
+
+.bottom-header .pfp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.b-header-right button {
+  background-color: rgb(42, 109, 196);
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: bolder;
+  color: white;
 }
 
 /* main content */
